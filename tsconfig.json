@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "src/*"
+      ]
+    },
+    "outDir": "build",
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "es2016",
+      "es2018",
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost",
+      "esnext.asynciterable",
+      "es2018.promise"
+    ],
+    "sourceMap": true,
+    "inlineSourceMap": false,
+    "inlineSources": false,
+    "experimentalDecorators": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "typings/main",
+    "typings/main.d.ts"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true,
+    "forceIsolatedModules": true,
+    "reportFiles": [
+      "src/**/*.{ts,tsx}"
+    ]
+  },
+  "allowSyntheticDefaultImports": true
+}
